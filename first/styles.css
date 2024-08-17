@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+}
+
+h2 {
+    color: #2E8C78;
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.guarantee {
+    color: #CEDA7B;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.description {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.pricing-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.price,
+.why-us {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.price h3,
+.why-us h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cost {
+    font-size: 28px;
+    margin: 0;
+    color: #2E8C78;
+}
+
+.cost span {
+    font-size: 16px;
+    color: #999;
+}
+
+.sign-up {
+    background-color: #CEDA7B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.sign-up:hover {
+    background-color: #b2c65a;
+}
+
+.why-us ul {
+    padding-left: 20px;
+    color: #777;
+    font-size: 14px;
+    list-style-type: disc;
+    margin: 0;
+}
+
+.why-us ul li {
+    margin-bottom: 5px;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (min-width: 768px) {
+    .pricing-section {
+        flex-direction: row;
+    }
+    .price, .why-us {
+        flex: 1;
+        margin-bottom: 0;
+    }
+}
